@@ -1,0 +1,45 @@
+let campoldade;
+function setup() {
+  createCanvas(500, 300);
+  campoidade=createInput("10");
+  
+}
+function draw() {
+  background("grey")
+  let idade=campoidade.value();
+  let recomendacao=geraRecomendacao(idade);
+  text(recomendacao,width/1,height/1);
+  textSize(30)
+  fill("pink")
+  text(recomendacao, 150,150);
+  
+}
+function geraRecomendacao(idade){
+ 
+  if (idade==18){
+    return "Star Wars";
+  }
+  if (idade==6) {
+    return "O Rei Leão";
+  }
+  if (idade==12) {
+    return "Avatar"
+  }
+  if (idade==20){
+    return "Os Vingadores:Ultimato";
+  }
+  if (idade==16) {
+    return "Jurassic Park";
+  }
+  if (idade==11){
+    return "Fiction";
+  }
+  if (idade==9) {
+    return "O Senhor dos Anéis";
+  }
+  if (idade==8) {
+    return "Harry Potter e as Reliquias da Morte";
+  }
+  if (idade==17) 
+    return "Matrix";
+}
